@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JCAnnotationDrawer.h"
+#import "NRColorPickerView.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <NRColorPickerDelegate>
 
+@property (strong, nonatomic) IBOutlet UIImageView *tempDrawImage;
+@property (strong, nonatomic) IBOutlet UIImageView *mainImage;
+
+@property (strong, nonatomic) IBOutlet UIButton *colorPickerButton;
 
 @end
 

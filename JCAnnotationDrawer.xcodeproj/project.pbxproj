@@ -13,6 +13,8 @@
 		17DEECD91DD3C72300D489EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17DEECD71DD3C72300D489EB /* Main.storyboard */; };
 		17DEECDB1DD3C72300D489EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17DEECDA1DD3C72300D489EB /* Assets.xcassets */; };
 		17DEECDE1DD3C72300D489EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17DEECDC1DD3C72300D489EB /* LaunchScreen.storyboard */; };
+		17DEECE71DD3C76F00D489EB /* JCAnnotationDrawer.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DEECE61DD3C76F00D489EB /* JCAnnotationDrawer.m */; };
+		17DEECEA1DD3E57600D489EB /* NRColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DEECE91DD3E57600D489EB /* NRColorPickerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		17DEECDA1DD3C72300D489EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17DEECDD1DD3C72300D489EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17DEECDF1DD3C72400D489EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17DEECE51DD3C76F00D489EB /* JCAnnotationDrawer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCAnnotationDrawer.h; sourceTree = "<group>"; };
+		17DEECE61DD3C76F00D489EB /* JCAnnotationDrawer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCAnnotationDrawer.m; sourceTree = "<group>"; };
+		17DEECE81DD3E57600D489EB /* NRColorPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRColorPickerView.h; sourceTree = "<group>"; };
+		17DEECE91DD3E57600D489EB /* NRColorPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRColorPickerView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,8 @@
 		17DEECCD1DD3C72300D489EB /* JCAnnotationDrawer */ = {
 			isa = PBXGroup;
 			children = (
+				17DEECE81DD3E57600D489EB /* NRColorPickerView.h */,
+				17DEECE91DD3E57600D489EB /* NRColorPickerView.m */,
 				17DEECD11DD3C72300D489EB /* AppDelegate.h */,
 				17DEECD21DD3C72300D489EB /* AppDelegate.m */,
 				17DEECD41DD3C72300D489EB /* ViewController.h */,
@@ -67,6 +75,8 @@
 				17DEECDC1DD3C72300D489EB /* LaunchScreen.storyboard */,
 				17DEECDF1DD3C72400D489EB /* Info.plist */,
 				17DEECCE1DD3C72300D489EB /* Supporting Files */,
+				17DEECE51DD3C76F00D489EB /* JCAnnotationDrawer.h */,
+				17DEECE61DD3C76F00D489EB /* JCAnnotationDrawer.m */,
 			);
 			path = JCAnnotationDrawer;
 			sourceTree = "<group>";
@@ -151,6 +161,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17DEECE71DD3C76F00D489EB /* JCAnnotationDrawer.m in Sources */,
+				17DEECEA1DD3E57600D489EB /* NRColorPickerView.m in Sources */,
 				17DEECD61DD3C72300D489EB /* ViewController.m in Sources */,
 				17DEECD31DD3C72300D489EB /* AppDelegate.m in Sources */,
 				17DEECD01DD3C72300D489EB /* main.m in Sources */,

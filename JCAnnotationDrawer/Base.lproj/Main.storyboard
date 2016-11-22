@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,8 +18,60 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f7d-UJ-91I"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LxX-AX-7ok"/>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k6j-DZ-KIi">
+                                <color key="backgroundColor" red="0.12549019607843137" green="0.73333333333333328" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="074-Tx-7kt"/>
+                                    <constraint firstAttribute="width" constant="60" id="aUy-cn-GW9"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="colorPickerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QUw-by-Bq6"/>
+                                </connections>
+                            </button>
+                            <view clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3oA-r7-M9K">
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="3oA-r7-M9K" secondAttribute="height" multiplier="1:1" id="297-2a-aUv"/>
+                                    <constraint firstAttribute="height" constant="18" id="Ddw-Pm-BvN"/>
+                                    <constraint firstAttribute="width" constant="18" id="set-It-DB0"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="f7d-UJ-91I" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2Ym-dX-V78"/>
+                            <constraint firstItem="LxX-AX-7ok" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="EuC-s9-PQQ"/>
+                            <constraint firstItem="3oA-r7-M9K" firstAttribute="centerX" secondItem="k6j-DZ-KIi" secondAttribute="centerX" id="Vrf-3R-rOT"/>
+                            <constraint firstItem="f7d-UJ-91I" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="WdF-RJ-NLi"/>
+                            <constraint firstAttribute="trailing" secondItem="f7d-UJ-91I" secondAttribute="trailing" id="Ych-Me-zbm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="f7d-UJ-91I" secondAttribute="bottom" id="bdK-cw-Xzj"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="k6j-DZ-KIi" secondAttribute="bottom" constant="20" id="jum-e1-Hd7"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LxX-AX-7ok" secondAttribute="bottom" id="kvk-Xt-nrS"/>
+                            <constraint firstItem="3oA-r7-M9K" firstAttribute="centerY" secondItem="k6j-DZ-KIi" secondAttribute="centerY" id="oG8-IH-Clz"/>
+                            <constraint firstItem="k6j-DZ-KIi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s4C-9i-VEe"/>
+                            <constraint firstItem="LxX-AX-7ok" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ySX-aa-27B"/>
+                            <constraint firstAttribute="trailing" secondItem="LxX-AX-7ok" secondAttribute="trailing" id="zuM-Gx-BZ3"/>
+                        </constraints>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="colorPickerButton" destination="k6j-DZ-KIi" id="9KU-lL-hco"/>
+                        <outlet property="mainImage" destination="f7d-UJ-91I" id="AL6-li-vyh"/>
+                        <outlet property="tempDrawImage" destination="LxX-AX-7ok" id="GbK-9v-nPx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
